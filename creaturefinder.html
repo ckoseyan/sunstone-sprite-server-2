@@ -309,6 +309,28 @@
       <img class="type" src="misc/poison/000.png" />
       <img class="type" src="misc/fairy/000.png" />
 
+      <br><br>
+      <img class="sprite" src="goosex.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <h3>#045 Goosex</h3>
+      <img class="type" src="misc/flying/000.png" />
+      <img class="type" src="misc/ice/000.png" />
+
     </div>
+
+    <script>
+      document.addEventListener("contextmenu", function(e){ 
+        if (e.target.className === "sprite") {
+            e.preventDefault();
+        }
+      }, false);
+
+      window.addEventListener("keydown", function(event) {
+        if (event.ctrlKey) {
+          if (event.key === "i") {
+            window.close();
+         }
+        }
+      });
+    </script>
   </body>
 </html>

@@ -3,30 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      @font-face {
-        font-family: airfryer;
-        src: url(misc/airfryer3.otf);
-      } 
-
-      * {
-        font-family: airfryer !important;
-      }
-
-      .sprite {
-        image-rendering: unset;
-        width: 120px;
-      }
-
-      .type {
-        image-rendering: pixelated;
-        width: 64px;
-        height: 24px;
-      }
-    </style>
-
-    <link rel="stylesheet" href="misc/w3.css" />
-    <link
+  <link rel="stylesheet" href="misc/w3.css" />
+  <link rel="stylesheet" href="misc/index.css" />
+<link
       rel="shortcut icon"
       type="image/png"
       href="favicon.ico"
@@ -46,291 +25,294 @@
       function hideShiny(event) {
         event.target.src = event.target.src.split('/').pop()
       }
+
+      function vc(event) {
+        word = event.target.src.split('/').pop().replace('.png','')
+        window.location.href = "creatureviewer.html?c=" + word.charAt(0).toUpperCase() + word.slice(1)
+      }
+
     </script>
     <div id="content">
 
-      <img class="sprite" src="joltigoat.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="joltigoat.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#001 Joltigoat</h3>
-      <img class="type" src="misc/water/000.png" />
-      <img class="type" src="misc/electric/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/water/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
       <br><br>
-      <img class="sprite" src="chargagoat.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="chargagoat.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#002 Chargagoat</h3>
-      <img class="type" src="misc/water/000.png" />
-      <img class="type" src="misc/electric/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/water/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/electric/000.png" />
       <br><br>
-      <img class="sprite" src="thunduram.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="thunduram.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#003 Thunduram</h3>
-      <img class="type" src="misc/water/000.png" />
-      <img class="type" src="misc/electric/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/water/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/electric/000.png" />
       <br><br>
 
-      <img class="sprite" src="flarva.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="flarva.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#004 Flarva</h3>
-      <img class="type" src="misc/fire/000.png" />
-      <img class="type" src="misc/bug/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fire/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
       <br><br>
-      <img class="sprite" src="flamect.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="flamect.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#005 Flamect</h3>
-      <img class="type" src="misc/fire/000.png" />
-      <img class="type" src="misc/bug/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fire/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/bug/000.png" />
       <br><br>
-      <img class="sprite" src="larvaruption.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="larvaruption.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#006 Larvaruption</h3>
-      <img class="type" src="misc/fire/000.png" />
-      <img class="type" src="misc/bug/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fire/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/bug/000.png" />
       <br><br>
 
-      <img class="sprite" src="cobby.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="cobby.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#007 Cobby</h3>
-      <img class="type" src="misc/grass/000.png" />
-      <img class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/grass/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
       <br><br>
-      <img class="sprite" src="cobnob.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="cobnob.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#008 Cobnob</h3>
-      <img class="type" src="misc/grass/000.png" />
-      <img class="type" src="misc/fighting/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/grass/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fighting/000.png" />
       <br><br>
-      <img class="sprite" src="erecticorn.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="erecticorn.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#009 Erecticorn</h3>
-      <img class="type" src="misc/grass/000.png" />
-      <img class="type" src="misc/fighting/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/grass/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fighting/000.png" />
 
       <br><br>
-      <img class="sprite" src="hentie.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="hentie.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#010 Hentie</h3>
-      <img class="type" src="misc/normal/000.png" />
-      <img class="type" src="misc/none/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/normal/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
       <br><br>
-      <img class="sprite" src="bawsrooster.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="bawsrooster.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#011 Bawsrooster</h3>
-      <img class="type" src="misc/normal/000.png" />
-      <img class="type" src="misc/fighting/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/normal/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fighting/000.png" />
       <br><br>
-      <img class="sprite" src="shaq.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="shaq.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#012 Shaq</h3>
-      <img class="type" src="misc/dark/000.png" />
-      <img class="type" src="misc/none/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/dark/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
       <br><br>
-      <img class="sprite" src="shakish.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="shakish.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#014 Shakish</h3>
-      <img class="type" src="misc/dark/000.png" />
-      <img class="type" src="misc/electric/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/dark/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/electric/000.png" />
 
       <br><br>
-      <img class="sprite" src="shakattack.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="shakattack.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#015 Shakattack</h3>
-      <img class="type" src="misc/dark/000.png" />
-      <img class="type" src="misc/electric/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/dark/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/electric/000.png" />
       
       <br><br>
-      <img class="sprite" src="peeka.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="peeka.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#016 Peeka</h3>
-      <img class="type" src="misc/flying/000.png" />
-      <img class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fairy/000.png" />
       
       <br><br>
-      <img class="sprite" src="meekapeeka.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="meekapeeka.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#017 Meekapeeka</h3>
-      <img class="type" src="misc/flying/000.png" />
-      <img class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fairy/000.png" />
       
       <br><br>
-      <img class="sprite" src="weekatica.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="weekatica.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#018 Wekatica</h3>
-      <img class="type" src="misc/flying/000.png" />
-      <img class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fairy/000.png" />
       
       <br><br>
-      <img class="sprite" src="orange box.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="orange box.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#019 Orange box</h3>
-      <img class="type" src="misc/normal/000.png" />
-      <img class="type" src="misc/none/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/normal/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
       
       <br><br>
-      <img class="sprite" src="birdhouse.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="birdhouse.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#020 Birdhouse</h3>
-      <img class="type" src="misc/ground/000.png" />
-      <img class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ground/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
       
       <br><br>
-      <img class="sprite" src="birdoffice.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="birdoffice.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#021 Birdoffice</h3>
-      <img class="type" src="misc/ground/000.png" />
-      <img class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ground/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
 
       <br><br>
-      <img class="sprite" src="goobet.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="goobet.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#022 Goobet</h3>
-      <img class="type" src="misc/poison/000.png" />
-      <img class="type" src="misc/dragon/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/poison/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/dragon/000.png" />
 
       <br><br>
-      <img class="sprite" src="goober.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="goober.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#023 Goober</h3>
-      <img class="type" src="misc/poison/000.png" />
-      <img class="type" src="misc/dragon/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/poison/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/dragon/000.png" />
 
       <br><br>
-      <img class="sprite" src="damien face.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="damien face.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#024 Damien face</h3>
-      <img class="type" src="misc/normal/000.png" />
-      <img class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/normal/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
 
       <br><br>
-      <img class="sprite" src="cofiend.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="cofiend.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#025 Cofiend</h3>
-      <img class="type" src="misc/water/000.png" />
-      <img class="type" src="misc/dark/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/water/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/dark/000.png" />
 
       <br><br>
-      <img class="sprite" src="crabite.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="crabite.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#025 Crabite</h3>
-      <img class="type" src="misc/crab/000.png" />
-      <img class="type" src="misc/water/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/crab/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/water/000.png" />
 
       <br><br>
-      <img class="sprite" src="crabubble.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="crabubble.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#026 Crabubble</h3>
-      <img class="type" src="misc/crab/000.png" />
-      <img class="type" src="misc/water/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/crab/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/water/000.png" />
 
       <br><br>
-      <img class="sprite" src="s. h. o. e. s..png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="s. h. o. e. s..png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#027 S. H. O. E. S.</h3>
-      <img class="type" src="misc/steel/000.png" />
-      <img class="type" src="misc/ground/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/steel/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ground/000.png" />
 
       <br><br>
-      <img class="sprite" src="phantocat.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="phantocat.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#028 Phantocat</h3>
-      <img class="type" src="misc/ghost/000.png" />
-      <img class="type" src="misc/psychic/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ghost/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/psychic/000.png" />
 
       <br><br>
-      <img class="sprite" src="spectrapurr.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="spectrapurr.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#029 Spectrapurr</h3>
-      <img class="type" src="misc/ghost/000.png" />
-      <img class="type" src="misc/psychic/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ghost/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/psychic/000.png" />
 
       <br><br>
-      <img class="sprite" src="metapaws.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="metapaws.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#030 Metapaws</h3>
-      <img class="type" src="misc/ghost/000.png" />
-      <img class="type" src="misc/psychic/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ghost/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/psychic/000.png" />
 
       <br><br>
-      <img class="sprite" src="nintendont.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="nintendont.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#031 Nintendon't</h3>
-      <img class="type" src="misc/dark/000.png" />
-      <img class="type" src="misc/none/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/dark/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
 
       <br><br>
-      <img class="sprite" src="sewrat.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="sewrat.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#032 Sewrat</h3>
-      <img class="type" src="misc/poison/000.png" />
-      <img class="type" src="misc/ground/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/poison/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ground/000.png" />
 
       <br><br>
-      <img class="sprite" src="rattler.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="rattler.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#033 Rattler</h3>
-      <img class="type" src="misc/poison/000.png" />
-      <img class="type" src="misc/ground/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/poison/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ground/000.png" />
 
       <br><br>
-      <img class="sprite" src="meisludge.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="meisludge.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#034 Meisludge</h3>
-      <img class="type" src="misc/poison/000.png" />
-      <img class="type" src="misc/ground/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/poison/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ground/000.png" />
 
       <br><br>
-      <img class="sprite" src="fluffball.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="fluffball.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#035 Fluffball</h3>
-      <img class="type" src="misc/fairy/000.png" />
-      <img class="type" src="misc/none/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
 
       <br><br>
-      <img class="sprite" src="fuzzeener.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="fuzzeener.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#036 Fuzzeener</h3>
-      <img class="type" src="misc/fairy/000.png" />
-      <img class="type" src="misc/none/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
 
       <br><br>
-      <img class="sprite" src="longfur.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="longfur.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#037 Longcoat</h3>
-      <img class="type" src="misc/fairy/000.png" />
-      <img class="type" src="misc/none/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
 
       <br><br>
-      <img class="sprite" src="michealsoft.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="michealsoft.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#038 Michealsoft</h3>
-      <img class="type" src="misc/normal/000.png" />
-      <img class="type" src="misc/none/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/normal/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/none/000.png" />
 
       <br><br>
-      <img class="sprite" src="sexbox.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="sexbox.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#039 Sexbox</h3>
-      <img class="type" src="misc/normal/000.png" />
-      <img class="type" src="misc/psychic/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/normal/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/psychic/000.png" />
 
       <br><br>
-      <img class="sprite" src="elechick.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="elechick.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#040 Elechick</h3>
-      <img class="type" src="misc/electric/000.png" />
-      <img class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/electric/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
 
       <br><br>
-      <img class="sprite" src="lasshock.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="lasshock.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#041 Lasshock</h3>
-      <img class="type" src="misc/electric/000.png" />
-      <img class="type" src="misc/psychic/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/electric/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/psychic/000.png" />
 
       <br><br>
-      <img class="sprite" src="thundercunt.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="thundercunt.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#042 Thundercunt</h3>
-      <img class="type" src="misc/electric/000.png" />
-      <img class="type" src="misc/psychic/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/electric/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/psychic/000.png" />
 
       <br><br>
-      <img class="sprite" src="venchick.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="venchick.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#043 Venchick</h3>
-      <img class="type" src="misc/poison/000.png" />
-      <img class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/poison/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
 
       <br><br>
-      <img class="sprite" src="infechick.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="infechick.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#044 Infechick</h3>
-      <img class="type" src="misc/poison/000.png" />
-      <img class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/poison/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fairy/000.png" />
 
       <br><br>
-      <img class="sprite" src="venomoneon.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="venomoneon.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#045 Venomoneon</h3>
-      <img class="type" src="misc/poison/000.png" />
-      <img class="type" src="misc/fairy/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/poison/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/fairy/000.png" />
 
       <br><br>
-      <img class="sprite" src="goosex.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
+      <img onclick="vc(event);" draggable="false" class="sprite" src="goosex.png" onmouseenter="showShiny(event);" onmouseleave="hideShiny(event);" >
       <h3>#045 Goosex</h3>
-      <img class="type" src="misc/flying/000.png" />
-      <img class="type" src="misc/ice/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/flying/000.png" />
+      <img onclick="vc(event);" draggable="false" class="type" src="misc/ice/000.png" />
 
     </div>
-
+    <br>
     <script>
       document.addEventListener("contextmenu", function(e){ 
         if (e.target.className === "sprite") {
             e.preventDefault();
         }
+        if (e.target.className === "spritelarge") {
+            e.preventDefault();
+        }
       }, false);
 
-      window.addEventListener("keydown", function(event) {
-        if (event.ctrlKey) {
-          if (event.key === "i") {
-            window.close();
-         }
-        }
-      });
+
     </script>
   </body>
 </html>

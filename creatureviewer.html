@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="misc/w3.css" />
+  <link rel="stylesheet" href="misc/index.css" />
+<link id="fav"
+      rel="shortcut icon"
+      type="image/png"
+      href="favicon.ico"
+    />
+    <title>LOADING...</title>
+  </head>
+  <body style="background-color: lightblue">
+    <br />
+
+    <h1 id="ms2">loading...</h1>
+    <h4 id="d1">loading...</h4>
+    <img id="t1" class="type" src="misc/none/000.png" />
+    <img id="t2" class="type" src="misc/none/000.png" />
+    <br>
+    <img draggable="false" id="ms" class="spritelarge" src=".png" >
+    <img draggable="false" id="msh" class="spritelarge" src=".png" ><br>
+    <h3 id="d2"></h3><br><br>
+
+    <h4 id="stat1">Base HP: </h4>
+    <h4 id="stat2">Base Attack: </h4>
+    <h4 id="stat3">Base Special Attack: </h4>
+    <h4 id="stat4">Base Defense: </h4>
+    <h4 id="stat5">Base Special Defense: </h4>
+    <h4 id="stat6">Base Speed: </h4><br>
+    <h4 id="jp">Japanese Name: </h4>
+
+    </div>
+    <br>
+    <script>
+      document.addEventListener("contextmenu", function(e){ 
+        if (e.target.className === "sprite") {
+            e.preventDefault();
+        }
+        if (e.target.className === "spritelarge") {
+            e.preventDefault();
+        }
+      }, false);
+
+      const searchParams = new URLSearchParams(window.location.search);
+      document.getElementById("ms").src = searchParams.get("c").toLowerCase() + ".png"
+      document.title = searchParams.get("c")
+
+      document.getElementById("msh").src = "s/" + searchParams.get("c").toLowerCase() + ".png"
+      document.getElementById("ms2").innerHTML = searchParams.get("c")
+
+
+      
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+        data = JSON.parse(this.responseText);
+
+        document.getElementById("d1").innerHTML = data[searchParams.get("c").toLowerCase()].desc1 + " POKEMON";
+        document.getElementById("d2").innerHTML = "Notes:<br>" + data[searchParams.get("c").toLowerCase()].desc2.replace(". ", ".<br>");
+
+        document.getElementById("t1").src = "misc/" + data[searchParams.get("c").toLowerCase()].type1 + "/000.png";
+        document.getElementById("t2").src = "misc/" + data[searchParams.get("c").toLowerCase()].type2 + "/000.png";
+
+        document.getElementById("jp").innerHTML += data[searchParams.get("c").toLowerCase()].jp;
+
+        document.getElementById("stat1").innerHTML += data[searchParams.get("c").toLowerCase()]["health"];
+        document.getElementById("stat2").innerHTML += data[searchParams.get("c").toLowerCase()]["physical-attack"];
+        document.getElementById("stat3").innerHTML += data[searchParams.get("c").toLowerCase()]["physical-defense"];
+        document.getElementById("stat4").innerHTML += data[searchParams.get("c").toLowerCase()]["special-attack"];
+        document.getElementById("stat5").innerHTML += data[searchParams.get("c").toLowerCase()]["special-defense"];
+        document.getElementById("stat6").innerHTML += data[searchParams.get("c").toLowerCase()]["speed"];
+
+      };
+      xhttp.open("GET", "https://sunstone.airfryer.zip/gamedata.json");
+      xhttp.send();
+
+
+    </script>
+  </body>
+</html>

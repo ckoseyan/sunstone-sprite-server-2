@@ -1,0 +1,24 @@
+@font-face {
+    font-family: airfryer;
+    src: url(airfryer3.otf);
+  } 
+
+  * {
+    font-family: airfryer !important;
+  }
+
+  .sprite {
+    image-rendering: unset;
+    width: 120px;
+  }
+
+  .spritelarge {
+    image-rendering: unset;
+    width: 200px;
+  }
+
+  .type {
+    image-rendering: pixelated;
+    width: 64px;
+    height: 24px;
+  }

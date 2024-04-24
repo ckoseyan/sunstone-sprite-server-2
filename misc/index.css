@@ -22,3 +22,7 @@
     width: 64px;
     height: 24px;
   }
+
+  body {
+    background-color: rgb(212, 230, 238);
+  }

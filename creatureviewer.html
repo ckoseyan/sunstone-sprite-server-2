@@ -21,7 +21,7 @@
     <img id="t2" class="type" src="misc/none/000.png" />
     <br>
     <img draggable="false" id="ms" class="spritelarge" src=".png" >
-    <!-- <img draggable="false" id="msh" class="spritelarge" src=".png" ><br> -->
+    <img draggable="false" id="msh" class="spritelarge" src=".png" ><br>
     <h3 id="d2"></h3><br><br>
 
     <h4 id="stat1">Base HP: </h4>
@@ -48,7 +48,7 @@
       document.getElementById("ms").src = searchParams.get("c").toLowerCase() + ".png"
       document.title = searchParams.get("c")
 
-      //document.getElementById("msh").src = searchParams.get("c").toLowerCase() + "-shiny.png"
+      document.getElementById("msh").src = searchParams.get("c").toLowerCase() + ".back.png"
       document.getElementById("ms2").innerHTML = searchParams.get("c")
 
 

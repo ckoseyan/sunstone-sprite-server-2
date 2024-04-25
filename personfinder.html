@@ -20,13 +20,28 @@
     <script>
 
       function vc(event) {
-        console.log(event)
+        word = event.target.src.split('/').pop().replace('.png','').replace(".back","")
+        window.location.href = "creatureviewer.html?c=" + word.charAt(0).toUpperCase() + word.slice(1)
       }
 
     </script>
     <div id="content">
 
-      <h2>Aissur:</h2>
+      
+      <img onclick="vc(event);" draggable="false" class="sprite" src="kat.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="kat.back.png">
+      <h3>Kat</h3>
+      <img draggable="false" class="type" src="misc/normal/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+     
+      <img onclick="vc(event);" draggable="false" class="sprite" src="bob.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="bob.back.png">
+      <h3>Bob</h3>
+      <img draggable="false" class="type" src="misc/normal/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+
+      <br>
+      <h2>Sunstone (Aissur):</h2>
 
       <img onclick="vc(event);" draggable="false" class="sprite" src="acacia.png">
       <h3>#01 Acacia</h3>
@@ -71,6 +86,17 @@
       <h3>#08 Mack</h3>
       <img draggable="false" class="type" src="misc/fighting/000.png" />
       <img draggable="false" class="type" src="misc/ice/000.png" /><br><br>
+ 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="ck.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="ck.back.png">
+      <h3>#09 CK</h3>
+      <img draggable="false" class="type" src="misc/fighting/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+
+      <img onclick="vc(event);" draggable="false" class="sprite" src="mario.png">
+      <h3>#10 Mario</h3>
+      <img draggable="false" class="type" src="misc/crab/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
 
            
 

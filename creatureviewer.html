@@ -21,13 +21,13 @@
     <img id="t2" class="type" src="misc/none/000.png" />
     <br>
     <img draggable="false" id="ms" class="spritelarge" src=".png" >
-    <img draggable="false" id="msh" class="spritelarge" src=".png" ><br>
+    <img draggable="false" id="msh" class="spritelarge" src=".png" onerror="this.parentNode.removeChild(this)"><br>
     <h3 id="d2"></h3><br><br>
 
     <h4 id="stat1">Base HP: </h4>
-    <h4 id="stat2">Base Attack: </h4>
+    <h4 id="stat2">Base Phyiscal Attack: </h4>
     <h4 id="stat3">Base Special Attack: </h4>
-    <h4 id="stat4">Base Defense: </h4>
+    <h4 id="stat4">Base Phyiscal Defense: </h4>
     <h4 id="stat5">Base Special Defense: </h4>
     <h4 id="stat6">Base Speed: </h4><br>
     <h4 id="jp">Japanese Name: </h4>
@@ -67,8 +67,8 @@
 
         document.getElementById("stat1").innerHTML += data[searchParams.get("c").toLowerCase()]["health"];
         document.getElementById("stat2").innerHTML += data[searchParams.get("c").toLowerCase()]["physical-attack"];
-        document.getElementById("stat3").innerHTML += data[searchParams.get("c").toLowerCase()]["physical-defense"];
-        document.getElementById("stat4").innerHTML += data[searchParams.get("c").toLowerCase()]["special-attack"];
+        document.getElementById("stat3").innerHTML += data[searchParams.get("c").toLowerCase()]["special-attack"];
+        document.getElementById("stat4").innerHTML += data[searchParams.get("c").toLowerCase()]["physical-defense"];
         document.getElementById("stat5").innerHTML += data[searchParams.get("c").toLowerCase()]["special-defense"];
         document.getElementById("stat6").innerHTML += data[searchParams.get("c").toLowerCase()]["speed"];
 

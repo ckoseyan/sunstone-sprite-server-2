@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="misc/w3.css" />
+  <link rel="stylesheet" href="misc/index.css" />
+<link
+      rel="shortcut icon"
+      type="image/png"
+      href="favicon.ico"
+    />
+    <title>Sprite Server</title>
+  </head>
+  <body>
+    <br />
+
+    <h1>PersonFinder</h1>
+    <br>
+    <script>
+
+      function vc(event) {
+        console.log(event)
+      }
+
+    </script>
+    <div id="content">
+
+      <h2>Aissur:</h2>
+
+      <img onclick="vc(event);" draggable="false" class="sprite" src="acacia.png">
+      <h3>#01 Acacia</h3>
+      <img draggable="false" class="type" src="misc/fire/000.png" />
+      <img draggable="false" class="type" src="misc/grass/000.png" /><br><br>
+
+      <img onclick="vc(event);" draggable="false" class="sprite" src="alejandro.png">
+      <h3>#02 Alejandro</h3>
+      <img draggable="false" class="type" src="misc/normal/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+ 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="alice.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="alice.back.png">
+      <h3>#03 Alice</h3>
+      <img draggable="false" class="type" src="misc/dark/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+ 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="dildo.png">
+      <h3>#04 The Dildo</h3>
+      <img draggable="false" class="type" src="misc/normal/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+ 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="jaiden.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="jaiden.back.png">
+      <h3>#05 Jaiden</h3>
+      <img draggable="false" class="type" src="misc/normal/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+  
+      <img onclick="vc(event);" draggable="false" class="sprite" src="mandjtv.png">
+      <h3>#06 MAndJTV</h3>
+      <img draggable="false" class="type" src="misc/normal/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+ 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="avacado.png">
+      <h3>#07 Avacado</h3>
+      <img draggable="false" class="type" src="misc/normal/000.png" />
+      <img draggable="false" class="type" src="misc/none/000.png" /><br><br>
+ 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="mack.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="mack.back.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="mack.car.png">
+      <h3>#08 Mack</h3>
+      <img draggable="false" class="type" src="misc/fighting/000.png" />
+      <img draggable="false" class="type" src="misc/ice/000.png" /><br><br>
+
+           
+
+
+
+
+    </div>
+    <br>
+    <script>
+      document.addEventListener("contextmenu", function(e){ 
+        if (e.target.className === "sprite") {
+            e.preventDefault();
+        }
+        if (e.target.className === "spritelarge") {
+            e.preventDefault();
+        }
+      }, false);
+
+
+    </script>
+  </body>
+</html>

@@ -24,6 +24,7 @@
     <img draggable="false" id="msh" class="spritelarge" src=".png" onerror="this.parentNode.removeChild(this)"><br>
     <h3 id="d2"></h3><br><br>
 
+    <div id="stats">
     <h4 id="stat1">Base HP: </h4>
     <h4 id="stat2">Base Phyiscal Attack: </h4>
     <h4 id="stat3">Base Special Attack: </h4>
@@ -31,6 +32,7 @@
     <h4 id="stat5">Base Special Defense: </h4>
     <h4 id="stat6">Base Speed: </h4><br>
     <h4 id="jp">Japanese Name: </h4>
+    </div>
 
     </div>
     <br>
@@ -58,6 +60,8 @@
         data = JSON.parse(this.responseText);
 
         document.getElementById("d1").innerHTML = data[searchParams.get("c").toLowerCase()].desc1 + " POKEMON";
+        //document.getElementById("d1").innerHTML = data[searchParams.get("c").toLowerCase()].desc1 + "";
+
         document.getElementById("d2").innerHTML = "Notes:<br>" + data[searchParams.get("c").toLowerCase()].desc2.replace(". ", ".<br>");
 
         document.getElementById("t1").src = "misc/" + data[searchParams.get("c").toLowerCase()].type1 + "/000.png";
@@ -71,6 +75,10 @@
         document.getElementById("stat4").innerHTML += data[searchParams.get("c").toLowerCase()]["physical-defense"];
         document.getElementById("stat5").innerHTML += data[searchParams.get("c").toLowerCase()]["special-defense"];
         document.getElementById("stat6").innerHTML += data[searchParams.get("c").toLowerCase()]["speed"];
+
+        if (data[searchParams.get("c").toLowerCase()]["nostats"] = "true") {
+          document.getElementById("stats").remove()
+        }
 
       };
       xhttp.open("GET", "https://sunstone.airfryer.zip/gamedata.json");

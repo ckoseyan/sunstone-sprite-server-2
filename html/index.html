@@ -6,11 +6,8 @@
 
 <link rel="stylesheet" href="../misc/w3.css" />
 <link rel="stylesheet" href="../misc/index.css" />
-<link
-      rel="shortcut icon"
-      type="image/png"
-      href="/favicon.ico"
-    />
+<link rel="icon" href="icon.png" sizes="any">
+
     <title>CC Wiki</title>
     
   </head>
@@ -28,10 +25,12 @@
     <br />
     <br />
     <script>
+      
       function game() {
         document.getElementById('games').style.display = ''
         document.getElementById('opengames').style.display = 'none'
       }
+
     </script>
     <a id="opengames" href="javascript:game()">Play Now!</a>
     <div id="games" style="display: none;"><a target="_blank" href="https://sunstone.airfryer.zip">Sunstone (Generation M1)</a></div>
@@ -44,6 +43,12 @@
 
 
     </h3>
+    <script>
+      if ( window.location.search.includes("k62") ) {
+        document.getElementById('games').style.display = 'none'
+        document.getElementById('opengames').style.display = 'none' 
+      }
+    </script>
     <script src="cpyprtct.js"></script>
     <script src="../misc/badge.js"></script>
   </body>

@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../misc/w3.css" />
   <link rel="stylesheet" href="../misc/index.css" />
-<link
-      rel="shortcut icon"
-      type="image/png"
-      href="/favicon.ico"
-    />
-    <title>Sprite Server</title>
+  <link rel="icon" href="icon.png" sizes="any">
+
+    <title>PersonFinder</title>
   </head>
   <body>
     <br />
 
     <h1>PersonFinder</h1>
+    <a href="/html/index.html">← back</a>
+    <br>
     <br>
     <script>
 
@@ -102,26 +101,40 @@
       <h3>#10 Mario</h3>
       <img draggable="false" class="type" src="../misc/crab/000.png" />
       <img draggable="false" class="type" src="../misc/none/000.png" /><br><br>
+   
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../amy.png">
+      <h3>#11 Amy</h3>
+      <img draggable="false" class="type" src="../misc/fairy/000.png" />
+      <img draggable="false" class="type" src="../misc/none/000.png" /><br><br>
 
-           
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../ambrose.png">
+      <h3>#12 Larry</h3>
+      <img draggable="false" class="type" src="../misc/steel/000.png" />
+      <img draggable="false" class="type" src="../misc/dark/000.png" /><br><br>
 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../ambrose.png">
+      <h3>#13 Lenny</h3>
+      <img draggable="false" class="type" src="../misc/steel/000.png" />
+      <img draggable="false" class="type" src="../misc/dark/000.png" /><br><br>
+                     
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../scammer.png">
+      <h3>#14 Scammer</h3>
+      <img draggable="false" class="type" src="../misc/dragon/000.png" />
+      <img draggable="false" class="type" src="../misc/fairy/000.png" /><br><br>
+ 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../spooky.png">
+      <h3>#15 Spooky</h3>
+      <img draggable="false" class="type" src="../misc/dark/000.png" />
+      <img draggable="false" class="type" src="../misc/poison/000.png" /><br><br>
 
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../craig manear.png">
+      <h3>#16 Craig Manear</h3>
+      <img draggable="false" class="type" src="../misc/water/000.png" />
+      <img draggable="false" class="type" src="../misc/fairy/000.png" /><br><br>
 
 
     </div>
     <br>
-    <script>
-      document.addEventListener("contextmenu", function(e){ 
-        if (e.target.className === "sprite") {
-            e.preventDefault();
-        }
-        if (e.target.className === "spritelarge") {
-            e.preventDefault();
-        }
-      }, false);
-
-
-    </script>
     <script src="cpyprtct.js"></script>
   <script src="../misc/badge.js"></script>
 </body>

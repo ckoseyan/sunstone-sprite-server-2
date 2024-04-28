@@ -4,17 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="https://airfryer.zip/favicon.ico" sizes="any">
+    <link rel="icon" href="icon.png" sizes="any">
     <link rel="apple-touch-icon" href="https://airfryer.zip/apple-touch-icon.png">
 
     <link rel="stylesheet" href="https://airfryer.zip/css/700.css" />
-    <link rel="stylesheet" href="https://airfryer.zip/fonts.css" />
+<style>
+  @font-face {
+  font-family: airfryer;
+  src: url(/misc/airfryer3.otf);
+}
 
+body {
+    background-color: rgb(212, 230, 238);
+}
+
+* {
+  font-family: airfryer !important;
+}
+</style>
     <title>404</title>
   </head>
   <body
     style="padding-left: 10px; padding-right: 10px"
-    class="microwave-orange"
   >
     <br />
 
@@ -28,15 +39,18 @@
       "
     >
       <h1>Error 404!</h1>
-      <t id="errormsg">rrrrrrrrrr</t><br />
-      <br />
-      "wow, such empty"<br />
-      -some bald guy probably <br />
 
+      <img src="../joltigoat.back.png" width="100" />
+      <img src="../flarva.back.png" width="100" />
+      <img src="../cobby.back.png" width="100" />
+      <img src="../herbert.back.png" width="100" />
+
+      <br><br>
+      <t id="errormsg">rrrrrrrrrr</t><br />
       <br /><a
         style="text-decoration: none"
         id="backbutton"
-        href="https://airfryer.zip/"
+        href="/html/index.html"
         ><h3>← back</h3></a
       >
     </div>
@@ -48,11 +62,11 @@
       }
 
       document.getElementById("errormsg").innerHTML =
-        "The file: " +
+        "The page: " +
         '"' +
         window.location.href +
         '"' +
-        "<br>was not found on the Air Fryer Network";
+        "<br>was not found on the CC Wiki";
     </script>
   </body>
 </html>

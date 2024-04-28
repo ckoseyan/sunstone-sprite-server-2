@@ -38,12 +38,12 @@
   
     // create badge image & styles
     badgeImage = document.createElement("img");
-    badgeImage.src = `buildergoose.png`;
+    badgeImage.src = `/buildergoose.png`;
     badgeImage.draggable = false;
     badgeImage.id = "AirFryer01ReplitBadgeReplacement";
  
     badgeImagetwo = document.createElement("img");
-    badgeImagetwo.src = `buildergoose.back.png`;
+    badgeImagetwo.src = `/buildergoose.back.png`;
     badgeImagetwo.draggable = false;
     badgeImagetwo.id = "AirFryer01ReplitBadgeReplacement2";
   

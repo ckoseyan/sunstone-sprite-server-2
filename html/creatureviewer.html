@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="misc/w3.css" />
-  <link rel="stylesheet" href="misc/index.css" />
+  <link rel="stylesheet" href="../misc/w3.css" />
+  <link rel="stylesheet" href="../misc/index.css" />
 <link id="fav"
       rel="shortcut icon"
       type="image/png"
-      href="favicon.ico"
+      href="/favicon.ico"
     />
     <title>LOADING...</title>
   </head>
@@ -17,8 +17,8 @@
 
     <h1 id="ms2">loading...</h1>
     <h4 id="d1">loading...</h4>
-    <img id="t1" class="type" src="misc/none/000.png" />
-    <img id="t2" class="type" src="misc/none/000.png" />
+    <img id="t1" class="type" src="../misc/none/000.png" />
+    <img id="t2" class="type" src="../misc/none/000.png" />
     <br>
     <img draggable="false" id="ms" class="spritelarge" src=".png" >
     <img draggable="false" id="msh" class="spritelarge" src=".png" onerror="this.parentNode.removeChild(this)"><br>
@@ -36,23 +36,12 @@
 
     </div>
     <br>
+
+    
     <script>
       
       proxy = ""
       proxy = "https://corsproxy.io/?"
-
-
-
-
-
-      document.addEventListener("contextmenu", function(e){ 
-        if (e.target.className === "sprite") {
-            e.preventDefault();
-        }
-        if (e.target.className === "spritelarge") {
-            e.preventDefault();
-        }
-      }, false);
 
       const searchParams = new URLSearchParams(window.location.search);
 
@@ -61,10 +50,10 @@
       }
 
       
-      document.getElementById("ms").src = searchParams.get("c").toLowerCase() + ".png"
+      document.getElementById("ms").src = "../" + searchParams.get("c").toLowerCase() + ".png"
       document.title = searchParams.get("c")
 
-      document.getElementById("msh").src = searchParams.get("c").toLowerCase() + ".back.png"
+      document.getElementById("msh").src = "../" + searchParams.get("c").toLowerCase() + ".back.png"
       document.getElementById("ms2").innerHTML = searchParams.get("c")
 
 
@@ -78,8 +67,8 @@
 
         document.getElementById("d2").innerHTML = "Notes:<br>" + data[searchParams.get("c").toLowerCase()].desc2.replace(". ", ".<br>");
 
-        document.getElementById("t1").src = "misc/" + data[searchParams.get("c").toLowerCase()].type1 + "/000.png";
-        document.getElementById("t2").src = "misc/" + data[searchParams.get("c").toLowerCase()].type2 + "/000.png";
+        document.getElementById("t1").src = "../misc/" + data[searchParams.get("c").toLowerCase()].type1 + "/000.png";
+        document.getElementById("t2").src = "../misc/" + data[searchParams.get("c").toLowerCase()].type2 + "/000.png";
 
         //document.getElementById("jp").innerHTML += data[searchParams.get("c").toLowerCase()].jp;
 
@@ -100,6 +89,7 @@
 
 
     </script>
-  <script src="misc/badge.js"></script>
+    <script src="cpyprtct.js"></script>
+  <script src="../misc/badge.js"></script>
 </body>
 </html>

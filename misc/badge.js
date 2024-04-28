@@ -37,12 +37,19 @@
     });
   
     // create badge image & styles
-    const badgeImage = document.createElement("img");
-    badgeImage.src = `goosex.back.png`;
+    badgeImage = document.createElement("img");
+    badgeImage.src = `buildergoose.png`;
     badgeImage.draggable = false;
     badgeImage.id = "AirFryer01ReplitBadgeReplacement";
+ 
+    badgeImagetwo = document.createElement("img");
+    badgeImagetwo.src = `buildergoose.back.png`;
+    badgeImagetwo.draggable = false;
+    badgeImagetwo.id = "AirFryer01ReplitBadgeReplacement2";
   
+
     Object.assign(badgeImage.style, validPositions[position]);
+    Object.assign(badgeImagetwo.style, validPositions[position]);
   
     // inject styles
     document.head.insertAdjacentHTML(
@@ -54,9 +61,17 @@
           cursor: pointer;
           z-index: 100;
           transition: transform 100ms ease-in-out;
-          width:122px;
+          width:90px;
         }
-  
+
+        #AirFryer01ReplitBadgeReplacement2 {
+          position: fixed;
+          cursor: pointer;
+          z-index: 100;
+          transition: transform 100ms ease-in-out;
+          width:220px;
+        }
+
         #AirFryer01ReplitBadgeReplacement:hover {
           //transform: scale(1.05);
         }
@@ -66,6 +81,7 @@
   
     // append badge to page
     badgeAnchor.appendChild(badgeImage);
+    badgeAnchor.appendChild(badgeImagetwo);
     document.body.appendChild(badgeAnchor);
   })(
     document.currentScript.getAttribute("theme"),

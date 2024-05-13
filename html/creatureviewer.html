@@ -53,7 +53,10 @@
       document.getElementById("ms").src = "../" + searchParams.get("c").toLowerCase() + ".png"
       document.title = searchParams.get("c")
 
+      if ( document.getElementById("msh") ) {
       document.getElementById("msh").src = "../" + searchParams.get("c").toLowerCase() + ".back.png"
+      }
+      
       document.getElementById("ms2").innerHTML = searchParams.get("c")
 
 
@@ -84,7 +87,7 @@
         }
 
       };
-      xhttp.open("GET", proxy + "https://sunstone.airfryer.zip/gamedata.json");
+      xhttp.open("GET", proxy + "https://sunstone.airfryer.zip/api.json");
       xhttp.send();
 
 

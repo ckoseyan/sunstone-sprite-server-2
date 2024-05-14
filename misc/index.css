@@ -1,11 +1,16 @@
 @font-face {
-    font-family: airfryer;
-    src: url(airfryer3.otf);
-  } 
+    font-family: NDS;
+    src: url(airpx.ttf);
+} 
 
-  * {
-    font-family: airfryer !important;
-  }
+@font-face {
+  font-family: pxoperator;
+  src: url(PixelOperator.ttf);
+} 
+
+* {
+    font-family: NDS !important;
+}
 
   .sprite {
     image-rendering: unset;

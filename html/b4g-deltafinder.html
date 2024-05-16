@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../misc/w3.css" />
+  <link rel="stylesheet" href="../misc/index.css" />
+  <link rel="icon" href="icon.png" sizes="any">
+
+    <title>B4G-DeltaFinder</title>
+  </head>
+  <body>
+    <br />
+
+    <h1>B4G-DeltaFinder</h1>
+    <a href="../html/index.html">← back</a>
+    <br>
+    <br>
+    <script>
+
+      function vc(event) {
+        word = event.target.src.split('/').pop().replace('.png','').replace(".back","")
+        window.location.href = "creatureviewer.html?c=" + word.charAt(0).toUpperCase() + word.slice(1)
+      }
+
+      function vc_caps(event) {
+        word = event.target.src.split('/').pop().replace('.png','').replace(".back","")
+        window.location.href = "creatureviewer.html?c=" + word.toUpperCase()
+      }
+
+    </script>
+    <div id="content">
+
+      
+
+      <br>
+      <h2>B4G Delta (New New Jersey, Alola):</h2>
+
+      <br>
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../may.png">
+      <h3>#01 May</h3>
+      <img draggable="false" class="type" src="../misc/fire/000.png" />
+      <img draggable="false" class="type" src="../misc/normal/000.png" /><br><br>
+
+      <br>
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../brendan.png">
+      <h3>#02 Brendan</h3>
+      <img draggable="false" class="type" src="../misc/fire/000.png" />
+      <img draggable="false" class="type" src="../misc/normal/000.png" /><br><br>
+
+      <br>
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../gloria.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../gloria.back.png">
+      <h3>#03 Gloria</h3>
+      <img draggable="false" class="type" src="../misc/normal/000.png" />
+      <img draggable="false" class="type" src="../misc/none/000.png" /><br><br>
+
+      <br>
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../mario.png">
+      <h3>#04 Mario</h3>
+      <img draggable="false" class="type" src="../misc/normal/000.png" />
+      <img draggable="false" class="type" src="../misc/psychic/000.png" /><br><br>
+
+      <br>
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../banner.png">
+      <h3>#05 Kyle Banner</h3>
+      <img draggable="false" class="type" src="../misc/psychic/000.png" />
+      <img draggable="false" class="type" src="../misc/none/000.png" /><br><br>
+
+      <br>
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../herbert.png">
+      <img onclick="vc(event);" draggable="false" class="sprite" src="../herbert.back.png">
+      <h3>#06 Herbert</h3>
+      <img draggable="false" class="type" src="../misc/dark/000.png" />
+      <img draggable="false" class="type" src="../misc/grass/000.png" /><br><br>
+
+    </div>
+    <br>
+    <script src="cpyprtct.js"></script>
+  <script src="/misc/badge.js"></script>
+</body>
+</html>

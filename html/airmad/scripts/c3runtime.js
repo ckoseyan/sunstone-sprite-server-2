@@ -4208,6 +4208,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TextBox.Cnds.PickByUID,
 		C3.Plugins.TextBox.Acts.SetText,
 		C3.Plugins.System.Exps.lowercase,
+		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Exps.replace,
 		C3.Plugins.Text.Cnds.PickByUID,
 		C3.Plugins.Text.Acts.SetText,
@@ -4216,7 +4217,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.List.Cnds.CompareSelectedText,
 		C3.Plugins.TextBox.Acts.SetEnabled,
 		C3.Plugins.System.Cnds.EveryTick,
-		C3.Plugins.Json.Exps.Get,
 		C3.Plugins.Json.Exps.GetAsBeautifiedString
 	];
 };
@@ -4227,7 +4227,8 @@ self.C3_JsPropNameTable = [
 	{Text: 0},
 	{Clipboard: 0},
 	{List: 0},
-	{stat: 0}
+	{stat: 0},
+	{name: 0}
 ];
 
 self.InstanceType = {
@@ -4358,7 +4359,6 @@ self.C3_ExpressionFuncs = [
 			return () => f0(n1.ExpObject());
 		},
 		() => 4,
-		() => "name",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
@@ -4392,7 +4392,7 @@ self.C3_ExpressionFuncs = [
 			return () => f0(n1.ExpObject(), "(No Secondary Type)", "none");
 		},
 		() => 18,
-		() => "hp",
+		() => "health",
 		() => 17,
 		() => "physical-attack",
 		() => 16,
@@ -4414,16 +4414,12 @@ self.C3_ExpressionFuncs = [
 			return () => f0(n1.ExpObject(), "evo method?", "(cant evolve)");
 		},
 		p => {
-			const n0 = p._GetNode(0);
+			const v0 = p._GetNode(0).GetVar();
 			const n1 = p._GetNode(1);
-			return () => (((and("\"", n0.ExpObject("name")) + "\": ") + n1.ExpObject("")) + ",");
+			return () => (((("\"" + v0.GetValue()) + "\": ") + n1.ExpObject("")) + ",");
 		},
-		() => "jp",
-		() => "NOTRANSLAT",
 		() => "introduced",
-		() => "Generation M1",
-		() => "id",
-		() => -277
+		() => "Generation M1"
 ];
 
 

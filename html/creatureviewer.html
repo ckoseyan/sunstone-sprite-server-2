@@ -51,7 +51,7 @@
 
       
       document.getElementById("ms").src = "../" + searchParams.get("c").toLowerCase() + ".png"
-      document.title = searchParams.get("c")
+      document.title = searchParams.get("c").toUpperCase()
 
       if ( document.getElementById("msh") ) {
       document.getElementById("msh").src = "../" + searchParams.get("c").toLowerCase() + ".back.png"

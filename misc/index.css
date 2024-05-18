@@ -17,6 +17,13 @@
     width: 120px;
   }
 
+  .spriteoverworld {
+    image-rendering: unset;
+    width: 40px;
+  }
+
+
+  
   #AirFryer01ReplitBadgeReplacement {
     image-rendering: unset;
   }

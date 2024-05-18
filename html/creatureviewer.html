@@ -57,7 +57,7 @@
       document.getElementById("msh").src = "../" + searchParams.get("c").toLowerCase() + ".back.png"
       }
       
-      document.getElementById("ms2").innerHTML = searchParams.get("c").replace("-fem","♀").replace("-mas","♂")
+      document.getElementById("ms2").innerHTML = searchParams.get("c").replace("-mas",'<img width="26" src="../mas.png" />').replace("-fem",'<img width="26" src="../fem.png" />')
 
 
       

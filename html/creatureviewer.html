@@ -18,8 +18,8 @@
     <img id="t1" class="type" src="../misc/none/000.png" />
     <img id="t2" class="type" src="../misc/none/000.png" />
     <br>
-    <img draggable="false" id="ms" class="spritelarge" src=".png" >
-    <img draggable="false" id="msh" class="spritelarge" src=".png" onerror="this.parentNode.removeChild(this)"><br>
+    <img draggable="false" id="ms" class="spritelarge" src="../.png" >
+    <img draggable="false" id="msh" class="spritelarge" src="../.png" onerror="this.parentNode.removeChild(this)"><br>
     <h3 id="d2"></h3><br>
 
     <a href="../html/index.html">← back</a>
@@ -51,13 +51,13 @@
 
       
       document.getElementById("ms").src = "../" + searchParams.get("c").toLowerCase() + ".png"
-      document.title = searchParams.get("c").toUpperCase()
+      document.title = searchParams.get("c").replace("-fem","♀").replace("-mas","♂").toUpperCase()
 
       if ( document.getElementById("msh") ) {
       document.getElementById("msh").src = "../" + searchParams.get("c").toLowerCase() + ".back.png"
       }
       
-      document.getElementById("ms2").innerHTML = searchParams.get("c")
+      document.getElementById("ms2").innerHTML = searchParams.get("c").replace("-fem","♀").replace("-mas","♂")
 
 
       
